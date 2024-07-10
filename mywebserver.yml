@@ -5,25 +5,25 @@
   tasks: 
   - name: install webserver on debian node side
     apt:
-      name: apache2 
+      name: "{{mywebpackonubuntu}}" 
       state: present
     when: ansible_os_family=="Debian"
 
   - name: start webserver on debian node side 
     service:
-      name: apache2
+      name: "{{mywebpackonubuntu}}"
       state: started  
     when: ansible_os_family=="Debian"
    
   - name: i want to install webserver on amazon nodes
     dnf:
-      name: httpd
+      name: "{{mywebpackonamazon}}"
       state: present
     when: ansible_os_family=="RedHat"
 
   - name: i want to start webserver on amazon nodes
     service:
-      name: httpd
+      name: "{{mywebpackonamazon}}"
       state: started
     when: ansible_os_family=="RedHat"
 

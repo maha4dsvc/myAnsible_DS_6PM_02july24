@@ -16,3 +16,9 @@
 
 [myredahtservers]
 172.31.19.61
+
+
+[mywebservers:vars]
+key=value
+mywebpackonubuntu= apache222222
+mywebpackonamazon= httpd
