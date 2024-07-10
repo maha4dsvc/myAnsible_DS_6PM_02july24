@@ -20,5 +20,5 @@
 
 [mywebservers:vars]
 key=value
-mywebpackonubuntu= apache222222
+mywebpackonubuntu= apache2
 mywebpackonamazon= httpd
