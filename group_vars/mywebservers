@@ -3,5 +3,5 @@
 key: value
 mywebpackonubuntu: apache2
 mywebpackonamazon: httpd
-myjavapackonubuntu: openjdk-11-jdk
-myjavapackonamazon: java-11-amazon-corretto
+myjavapackonubuntu: openjdk-8-jdk
+myjavapackonamazon: java-1.8.0-amazon-corretto-devel
