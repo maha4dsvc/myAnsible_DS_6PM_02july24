@@ -5,5 +5,5 @@
        state: directory
   - name: create file on node side
     file: 
-      path: /home/maha/myfolde/myfirstfile
+      path: /home/maha/myfolder/myfirstfile
       state: touch
