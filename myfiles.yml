@@ -1,0 +1,9 @@
+---
+  - name: create a folder on node side
+    file: 
+       path: /home/maha/myfolder
+       state: directory
+  - name: create file on node side
+    file: 
+      path: /home/maha/myfolde/myfirstfile
+      state: touch
