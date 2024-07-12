@@ -16,10 +16,15 @@
     template:
        src: myindex.j2
        dest: /var/www/html/index.html
+    notify: restartwebserver
 
   - name: download internet files
     get_url:
         url: https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/9.0.55/tomcat-9.0.55.tar.gz
         dest: /home/maha/myfolder/tomcat-9.0.55.tar.gz
         force_basic_auth: yes
-
+  handlers:
+  - name: restartwebserver
+    service:
+       name: apache2
+       state: restarted 
